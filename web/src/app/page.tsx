@@ -1,15 +1,23 @@
 import { Button } from "@/components/button";
+import { IconButton } from "@/components/icon-button";
+// import { Input } from "@/components/input";
+import{ArrowRight, Copy} from "lucide-react"
 
 export default function Home() {
   return (
     <main>
-      <div className="text-white">Hello world!</div>
+      <Button type="submit"> 
+        enviar
+        <ArrowRight/>
+      </Button>
 
-    <Button text="Diego"/>
-    <Button text="NLW"/>
-    <Button text="Diego"  />
-    <Button />
-    <Button />
+      <IconButton>
+        <Copy/>
+      </IconButton>
+
+    {/* <Input type="email" placeholder="Digite o seu Email" />
+    <Input type="email" placeholder="Digite o seu Email" error/> */}
+
     </main>
   );
 }
